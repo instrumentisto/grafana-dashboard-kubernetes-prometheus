@@ -73,7 +73,7 @@ scrape_configs:
 
 ## Features
 
-- Total and used cluster resources: CPU, memory, file system.  
+- Total and used cluster resources: CPU, memory, filesystem.  
   And total cluster network I/O pressure.  
   ![Total and used cluster resources](https://raw.githubusercontent.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/dev/screens/total.png)
 - [Kubernetes pods](http://kubernetes.io/docs/user-guide/pods) usage:
@@ -88,3 +88,11 @@ scrape_configs:
   ![systemd usage](https://raw.githubusercontent.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/dev/screens/systemd.png)
 - Showing all above metrics both for all cluster and each node separately.  
   ![Filtering metrics by nodes](https://raw.githubusercontent.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/dev/screens/by_nodes.png)
+
+
+
+## Troubleshooting
+
+If filesystem usage panels displays `N/A`, you should correct
+`device="/dev/vda9"` filter parameter in metrics query with devices your system
+actually provides.
