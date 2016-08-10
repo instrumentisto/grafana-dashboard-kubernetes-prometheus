@@ -73,4 +73,13 @@ scrape_configs:
 
 ## Features
 
-
+- Total and used cluster resources: CPU, memory, file system.  
+  And total cluster network I/O pressure.
+- [Kubernetes pods](http://kubernetes.io/docs/user-guide/pods) usage:
+  CPU, memory, network I/O.
+- Containers usage: CPU, memory, network I/O.  
+  [Docker](https://www.docker.com) and [rkt](https://coreos.com/rkt) containers
+  which runs on cluster nodes but outside Kubernetes are also monitored.
+- [systemd](https://freedesktop.org/wiki/Software/systemd) system services
+  usage: CPU, memory.
+- Showing all above metrics both for all cluster and each node separately.
