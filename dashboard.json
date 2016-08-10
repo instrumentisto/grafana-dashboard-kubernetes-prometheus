@@ -37,7 +37,7 @@
   ],
   "id": null,
   "title": "Kubernetes cluster monitoring (via Prometheus)",
-  "description": "Monitor a Kubernetes cluster using Prometheus TSDB. Shows overall cluster CPU / Memory / Disk usage as well as individual pod statistics.",
+  "description": "Monitors Kubernetes cluster using Prometheus. Shows overall cluster CPU / Memory / Filesystem usage as well as individual pod, containers, systemd services statistics. Uses cAdvisor metrics only.",
   "tags": [
     "kubernetes"
   ],

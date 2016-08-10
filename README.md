@@ -3,6 +3,7 @@ Kubernetes cluster monitoring Grafana dashboard (via Prometheus)
 
 [![GitHub release](https://img.shields.io/github/release/instrumentisto/grafana-dashboard-kubernetes-prometheus.svg)](https://github.com/instrumentisto/grafana-dashboard-kubernetes-prometheus)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/blob/master/LICENSE.md)
+[![license](https://img.shields.io/badge/grafana.net-link-blue.svg)](https://grafana.net/dashboards/303)
 
 Initial idea was taken from [this dashboard](https://grafana.net/dashboards/162)
 and improved to exclude `node-exporter` dependency and to give more information
@@ -75,24 +76,24 @@ scrape_configs:
 
 - Total and used cluster resources: CPU, memory, filesystem.  
   And total cluster network I/O pressure.  
-  ![Total and used cluster resources](https://raw.githubusercontent.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/dev/screens/total.png)
+  ![Total and used cluster resources](https://raw.githubusercontent.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/master/screens/total.png)
 - [Kubernetes pods](http://kubernetes.io/docs/user-guide/pods) usage:
   CPU, memory, network I/O.  
-  ![Pods usage](https://raw.githubusercontent.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/dev/screens/pods.png)
+  ![Pods usage](https://raw.githubusercontent.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/master/screens/pods.png)
 - Containers usage: CPU, memory, network I/O.  
   [Docker](https://www.docker.com) and [rkt](https://coreos.com/rkt) containers
   which runs on cluster nodes but outside Kubernetes are also monitored.  
-  ![Containers usage](https://raw.githubusercontent.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/dev/screens/containers.png)
+  ![Containers usage](https://raw.githubusercontent.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/master/screens/containers.png)
 - [systemd](https://freedesktop.org/wiki/Software/systemd) system services
   usage: CPU, memory.  
-  ![systemd usage](https://raw.githubusercontent.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/dev/screens/systemd.png)
+  ![systemd usage](https://raw.githubusercontent.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/master/screens/systemd.png)
 - Showing all above metrics both for all cluster and each node separately.  
-  ![Filtering metrics by nodes](https://raw.githubusercontent.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/dev/screens/by_nodes.png)
+  ![Filtering metrics by nodes](https://raw.githubusercontent.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/master/screens/by_nodes.png)
 
 
 
 ## Troubleshooting
 
-If filesystem usage panels displays `N/A`, you should correct
+If filesystem usage panels display `N/A`, you should correct
 `device="/dev/vda9"` filter parameter in metrics query with devices your system
-actually provides.
+actually has.
