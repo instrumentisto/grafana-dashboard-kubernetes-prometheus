@@ -74,12 +74,17 @@ scrape_configs:
 ## Features
 
 - Total and used cluster resources: CPU, memory, file system.  
-  And total cluster network I/O pressure.
+  And total cluster network I/O pressure.  
+  ![Total and used cluster resources](https://raw.githubusercontent.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/dev/screens/total.png)
 - [Kubernetes pods](http://kubernetes.io/docs/user-guide/pods) usage:
-  CPU, memory, network I/O.
+  CPU, memory, network I/O.  
+  ![Pods usage](https://raw.githubusercontent.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/dev/screens/pods.png)
 - Containers usage: CPU, memory, network I/O.  
   [Docker](https://www.docker.com) and [rkt](https://coreos.com/rkt) containers
-  which runs on cluster nodes but outside Kubernetes are also monitored.
+  which runs on cluster nodes but outside Kubernetes are also monitored.  
+  ![Containers usage](https://raw.githubusercontent.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/dev/screens/containers.png)
 - [systemd](https://freedesktop.org/wiki/Software/systemd) system services
-  usage: CPU, memory.
-- Showing all above metrics both for all cluster and each node separately.
+  usage: CPU, memory.  
+  ![systemd usage](https://raw.githubusercontent.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/dev/screens/systemd.png)
+- Showing all above metrics both for all cluster and each node separately.  
+  ![Filtering metrics by nodes](https://raw.githubusercontent.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/dev/screens/by_nodes.png)
