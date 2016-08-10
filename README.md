@@ -1,9 +1,12 @@
 Kubernetes cluster monitoring Grafana dashboard (via Prometheus)
 ================================================================
 
-[![GitHub release](https://img.shields.io/github/release/instrumentisto/grafana-dashboard-kubernetes-prometheus.svg)](https://github.com/instrumentisto/grafana-dashboard-kubernetes-prometheus)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/blob/master/LICENSE.md)
-[![license](https://img.shields.io/badge/grafana.net-link-blue.svg)](https://grafana.net/dashboards/303)
+[![release](https://img.shields.io/github/release/instrumentisto/grafana-dashboard-kubernetes-prometheus.svg)](https://github.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/releases/tag/v1)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/blob/master/LICENSE.md)
+[![grafana](https://img.shields.io/badge/grafana-%5E3.1.1-green.svg)](https://github.com/grafana/grafana)
+[![prometheus](https://img.shields.io/badge/prometheus-%5E1.0.0-green.svg)](https://github.com/prometheus/prometheus)
+[![link](https://img.shields.io/badge/grafana.net-link-blue.svg)](https://grafana.net/dashboards/303)
+
 
 Initial idea was taken from [this dashboard](https://grafana.net/dashboards/162)
 and improved to exclude `node-exporter` dependency and to give more information
