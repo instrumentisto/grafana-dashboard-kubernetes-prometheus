@@ -6,7 +6,7 @@ Kubernetes cluster monitoring Grafana dashboard (via Prometheus)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/blob/master/LICENSE.md)
 [![grafana](https://img.shields.io/badge/grafana-%5E3.1.1-green.svg)](https://github.com/grafana/grafana)
 [![prometheus](https://img.shields.io/badge/prometheus-%5E1.0.0-green.svg)](https://github.com/prometheus/prometheus)
-[![link](https://img.shields.io/badge/grafana.net-link-blue.svg)](https://grafana.net/dashboards/303)
+[![link](https://img.shields.io/badge/grafana.net-link-blue.svg)](https://grafana.net/dashboards/315)
 
 
 Initial idea was taken from [this dashboard](https://grafana.net/dashboards/162)
