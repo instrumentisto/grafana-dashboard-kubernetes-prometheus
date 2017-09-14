@@ -35,6 +35,14 @@ scrape_configs:
     relabel_configs:
       - action: labelmap
         regex: __meta_kubernetes_node_label_(.+)
+      # Only for Kubernetes ^1.7.3.
+      # See: https://github.com/prometheus/prometheus/issues/2916
+      - target_label: __address__
+        replacement: kubernetes.default.svc:443
+      - source_labels: [__meta_kubernetes_node_name]
+        regex: (.+)
+        target_label: __metrics_path__
+        replacement: /api/v1/nodes/${1}/proxy/metrics/cadvisor 
     metric_relabel_configs:
       - action: replace
         source_labels: [id]
