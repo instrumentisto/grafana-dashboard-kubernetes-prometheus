@@ -10,23 +10,17 @@ Kubernetes cluster monitoring Grafana dashboard (via Prometheus)
 [![link](https://img.shields.io/badge/grafana.net-link-blue.svg)](https://grafana.net/dashboards/315)
 
 
-Initial idea was taken from [this dashboard](https://grafana.net/dashboards/162)
-and improved to exclude `node-exporter` dependency and to give more information
-about cluster state.
+Initial idea was taken from [this dashboard](https://grafana.net/dashboards/162) and improved to exclude `node-exporter` dependency and to give more information about cluster state.
 
 
 
 ## Requirements
 
-You only need to have running [Kubernetes](http://kubernetes.io) cluster with 
-deployed [Prometheus](https://prometheus.io).
-Prometheus will use metrics provided by [cAdvisor](https://github.com/google/cadvisor) 
-via [kubelet](http://kubernetes.io/docs/admin/kubelet) service (runs on
-each node of Kubernetes cluster by default) and via 
+You only need to have running [Kubernetes](http://kubernetes.io) cluster with deployed [Prometheus](https://prometheus.io).
+Prometheus will use metrics provided by [cAdvisor](https://github.com/google/cadvisor) via [kubelet](http://kubernetes.io/docs/admin/kubelet) service (runs on each node of Kubernetes cluster by default) and via 
 [kube-apiserver](http://kubernetes.io/docs/admin/kube-apiserver) service only.
 
-Your Prometheus configuration has to contain following
-[`scrape_configs`](https://prometheus.io/docs/operating/configuration/#scrape_config): 
+Your Prometheus configuration has to contain following [`scrape_configs`](https://prometheus.io/docs/operating/configuration/#scrape_config): 
 ```yaml
 scrape_configs:
   - job_name: kubernetes-nodes-cadvisor
@@ -78,6 +72,4 @@ scrape_configs:
 
 ## Troubleshooting
 
-If filesystem usage panels display `N/A`, you should correct
-`device=~"^/dev/[vs]da9$"` filter parameter in metrics query with devices your
-system actually has. 
+If filesystem usage panels display `N/A`, you should correct `device=~"^/dev/[vs]da9$"` filter parameter in metrics query with devices your system actually has. 
