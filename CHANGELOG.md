@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 
 
 
+## v3 [2017-11-15]
+
+- Matches all possibles disks drives. ([#6](https://github.com/instrumentisto/grafana-dashboard-kubernetes-prometheus/pull/6), [@Lord-Y](https://github.com/Lord-Y))
+
+
+
 ## v2 [2016-11-16]
 
 - Makes CPU and memory usage charts staircased.
