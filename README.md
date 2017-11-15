@@ -81,4 +81,4 @@ scrape_configs:
 
 ## Troubleshooting
 
-If filesystem usage panels display `N/A`, you should correct `device=~"^/dev/[vs]da9$"` filter parameter in metrics query with devices your system actually has. 
+If filesystem usage panels display `N/A`, you should correct `device=~"^/dev/[sv]d[a-z][1-9]$"` filter parameter in metrics query with devices your system actually has. 
